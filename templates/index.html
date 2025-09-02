@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Detector 🍓</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🍍 Fruit Detector 🍌</h1>
+    <input type="file" id="upload" />
+    <button onclick="detect()">Détecter</button>
+    <pre id="result"></pre>
+
+    <script>
+        function detect() {
+            const file = document.getElementById('upload').files[0];
+            const formData = new FormData();
+            formData.append('image', file);
+
+            fetch('/detect', {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                let res = "";
+                data.forEach(obj => {
+                    res += `Fruit : ${obj.class}, Confiance : ${obj.confidence.toFixed(2)}\n`;
+                });
+                document.getElementById('result').innerText = res;
+            });
+        }
+    </script>
+</body>
+</html>

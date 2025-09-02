@@ -1,0 +1,29 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to right, #f7f6d3, #fbd786, #f7797d);
+    text-align: center;
+    padding: 40px;
+    color: #333;
+}
+h1 {
+    font-size: 3em;
+}
+input[type="file"] {
+    margin: 20px;
+}
+button {
+    padding: 10px 20px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+pre {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+}
