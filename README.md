@@ -5,7 +5,7 @@
 This project is a **Fruit Detection and Instance Segmentation** application using **Roboflow** and **YOLOv8**.  
 Users can upload an image of fruits, and the app will detect and classify them with confidence scores.
 
-- Dataset: [Fruits 1608 Dataset](https://app.roboflow.com/ds/oIDDdLpuPI?key=huQnrsqtWt)
+- Dataset: [Fruits 1608 Dataset]
 - Model: YOLOv8 trained on Roboflow  
 - Deployment: Web app using **Flask** + **HTML/JavaScript**  
 - API: Roboflow API is used to make predictions after training
