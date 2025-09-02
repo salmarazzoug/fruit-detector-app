@@ -87,6 +87,6 @@ http://127.0.0.1:5000/
 
 ## License
 
-This project uses the Fruits 360 dataset, which is free for educational purposes.
+This project uses the Fruits 1608 dataset, which is free for educational purposes.
 Feel free to use, modify, and share for learning and demo purposes.
 
